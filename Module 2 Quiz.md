@@ -40,16 +40,16 @@ Question 4
 Why is caching important?
 
 
-X It always stores data in-memory to improve performance
+ It always stores data in-memory to improve performance
 
 
 **It stores data on the cluster to improve query performance**
 
 
-X It reformats data already stored in RAM for faster access
+ It reformats data already stored in RAM for faster access
 
 
-X It improves queries against data read one or more times
+ It improves queries against data read one or more times
 
 
 Question 5
@@ -86,11 +86,11 @@ When is it appropriate to use a shuffle join?
 
 **When both tables are moderately sized or large**
 
-X When both tables are very small
+ When both tables are very small
 
-X  Never. Broadcast joins always out-perform shuffle joins.
+  Never. Broadcast joins always out-perform shuffle joins.
 
-X  When the smaller table is significantly smaller than the larger table
+  When the smaller table is significantly smaller than the larger table
 
 
 Question 8
