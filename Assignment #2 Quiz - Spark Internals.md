@@ -18,4 +18,4 @@ Narrow
 Question 4
 How many tasks were in the last stage of the last job?
 
-2
+1
