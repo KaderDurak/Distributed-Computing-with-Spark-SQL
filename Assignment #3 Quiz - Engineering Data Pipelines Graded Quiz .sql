@@ -67,7 +67,8 @@ LOCATION '/tmp/newTableLoc'
 -- MAGIC 
 -- MAGIC ### Question 1
 -- MAGIC **What type of table is `newTable`? "EXTERNAL" or "MANAGED"?**
-
+-- MAGIC ### Answer 1
+-- MAGIC **EXTERNAL**
 -- COMMAND ----------
 
 DESCRIBE EXTENDED newTable
@@ -156,7 +157,9 @@ select * from newTable
 -- MAGIC ### Question 2
 -- MAGIC 
 -- MAGIC **How many rows are in `newTable`? **
-
+-- MAGIC ### Answer 2
+-- MAGIC **191039**
+  
 -- COMMAND ----------
 
 -- TODO
@@ -171,7 +174,9 @@ SELECT COUNT(*) FROM newTable
 -- MAGIC ### Question 3
 -- MAGIC 
 -- MAGIC **What is the "Battalion" of the first entry in the sorted table?**
-
+-- MAGIC ### Answer 3
+-- MAGIC **B01**
+  
 -- COMMAND ----------
 
 -- TODO
@@ -235,7 +240,9 @@ DESCRIBE EXTENDED newTablePartitioned
 -- MAGIC ### Question 4
 -- MAGIC 
 -- MAGIC **Was this query faster or slower on the table with increased partitions?**
-
+-- MAGIC ### Answer 4
+-- MAGIC **Slower**
+  
 -- COMMAND ----------
 
 SELECT * FROM newTablePartitioned ORDER BY `Battalion`
@@ -267,7 +274,8 @@ DROP TABLE newTable;
 -- MAGIC ### Question 5
 -- MAGIC 
 -- MAGIC **Does the data stored within the table still exist at the original location (`dbfs:/tmp/newTableLoc`) after you dropped the table? (Answer "yes" or "no")**
-
+-- MAGIC ### Answer 5
+-- MAGIC **Yes**
 -- COMMAND ----------
 
 -- MAGIC %fs ls dbfs:/tmp/newTableLoc
