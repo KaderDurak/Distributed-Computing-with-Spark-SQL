@@ -4,9 +4,9 @@ Decoupling storage and compute means storing data in one location and processing
 
 + It makes updates to new software versions easier
 
-Resources are isolated and therefore more manageable and debuggable
++ Resources are isolated and therefore more manageable and debuggable
 
-+ It results in copies of the data in case of a data center outage
+It results in copies of the data in case of a data center outage
 
 + It allows for elastic resources so larger storage or compute resources are used only when needed
 
